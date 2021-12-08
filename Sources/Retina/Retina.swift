@@ -16,6 +16,8 @@ struct Retina: ParsableCommand {
         switch command {
         case .toggle:
             try ToggleCommand.run(for: display)
+        case .version:
+            VersionCommand.run()
         }
     }
 
