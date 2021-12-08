@@ -1,5 +1,4 @@
 import CoreGraphics
-import Foundation
 
 struct Resolution: Hashable {
     var current: Bool
