@@ -14,8 +14,10 @@ struct Retina: ParsableCommand {
     mutating func run() throws {
         let display = try Display()
         switch command {
-        case .toggle:
-            try ToggleCommand.run(for: display)
+        case .previous:
+            try ToggleCommand.run(for: display, direction: .previous)
+        case .next:
+            try ToggleCommand.run(for: display, direction: .next)
         case .version:
             VersionCommand.run()
         }

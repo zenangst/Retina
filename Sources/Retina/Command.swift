@@ -1,7 +1,8 @@
 import ArgumentParser
 
 enum Command: String, CaseIterable, ExpressibleByArgument {
-    case toggle
+    case previous
+    case next
     case version
 
     init?(argument: String) {
