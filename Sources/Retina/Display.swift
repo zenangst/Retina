@@ -10,8 +10,8 @@ struct Display {
     var displayMode: CGDisplayMode
 
     private var validRefreshRates: Set<Double> = [120.0]
-    private var validWidths: Set<Int> = [1512, 1800]
-    private var validHeights: Set<Int> = [982, 1169]
+    private var validWidths: Set<Int> = [1352, 1512, 1800]
+    private var validHeights: Set<Int> = [878, 982, 1169]
 
     /// List all available modes.
     var modes: [CGDisplayMode] {
